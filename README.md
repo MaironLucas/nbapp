@@ -1,16 +1,11 @@
-# nbapp
+# NBApp
+This app is designed to consume the [API-NBA](https://rapidapi.com/api-sports/api/api-nba) with the purpose of showing the NBA games and their details like teams, players, standing, etc.
 
-A new Flutter project.
+Also, this app is designed to demonstrate my knowledge on developing mobile apps using Flutter.
 
-## Getting Started
+## How to run
+To run, put this additional arg to you flutter run:
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+ --dart-define-from-file=.env
+```

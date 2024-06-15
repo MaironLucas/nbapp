@@ -8,7 +8,7 @@ import 'package:nbapp/data/remote/model/teams_rm.dart';
 
 part 'game_summary_rm.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(createToJson: false)
 class GameSummaryRM {
   GameSummaryRM(
     this.id,

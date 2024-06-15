@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'game_status_rm.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(createToJson: false)
 class GameStatusRM {
   GameStatusRM(
     this.clock,

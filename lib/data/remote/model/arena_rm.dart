@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'arena_rm.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(createToJson: false)
 class ArenaRM {
   ArenaRM(
     this.city,

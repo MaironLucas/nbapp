@@ -3,7 +3,7 @@ import 'package:nbapp/data/remote/model/team_score_rm.dart';
 
 part 'scores_rm.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(createToJson: false)
 class ScoresRM {
   ScoresRM(
     this.visitors,

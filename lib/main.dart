@@ -1,7 +1,13 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 import 'package:logger/logger.dart';
+import 'package:nbapp/common/di.dart';
+import 'package:nbapp/common/routing/routing.dart';
+import 'package:nbapp/common/theme.dart';
+import 'package:nbapp/common/util.dart';
 
 class Log {
   Logger logger = Logger(printer: PrettyPrinter());
@@ -19,8 +25,9 @@ void main() async {
   final errorLogger = Log().logError;
   await runZonedGuarded(
     () async {
+      setupDI();
       runApp(
-        MyApp(),
+        _MyApp(),
       );
     },
     (error, stackTrace) => errorLogger(
@@ -31,20 +38,19 @@ void main() async {
   );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({
+class _MyApp extends StatelessWidget {
+  const _MyApp({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    TextTheme textTheme = createTextTheme(context, "Poppins", "Poppins");
+    MaterialTheme theme = MaterialTheme(textTheme);
+    return MaterialApp.router(
       title: 'NBApp',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: Placeholder(),
+      theme: theme.dark(),
+      routerConfig: appRoutes,
     );
   }
 }

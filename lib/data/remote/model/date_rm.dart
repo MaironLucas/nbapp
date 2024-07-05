@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'date_rm.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(createToJson: false)
 class DateRM {
   DateRM(
     this.start,

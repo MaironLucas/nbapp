@@ -1,13 +1,11 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:get_it/get_it.dart';
-import 'package:go_router/go_router.dart';
 import 'package:logger/logger.dart';
 import 'package:nbapp/common/di.dart';
 import 'package:nbapp/common/routing/routing.dart';
-import 'package:nbapp/common/theme.dart';
-import 'package:nbapp/common/util.dart';
+import 'package:nbapp/common/theme/theme.dart';
+import 'package:nbapp/common/theme/util.dart';
 
 class Log {
   Logger logger = Logger(printer: PrettyPrinter());
@@ -39,9 +37,7 @@ void main() async {
 }
 
 class _MyApp extends StatelessWidget {
-  const _MyApp({
-    super.key,
-  });
+  const _MyApp();
 
   @override
   Widget build(BuildContext context) {

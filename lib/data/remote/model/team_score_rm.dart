@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'team_score_rm.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(createToJson: false)
 class TeamScoreRM {
   TeamScoreRM(
     this.win,

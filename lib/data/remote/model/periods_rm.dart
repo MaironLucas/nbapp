@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'periods_rm.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(createToJson: false)
 class PeriodsRM {
   PeriodsRM(
     this.current,

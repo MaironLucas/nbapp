@@ -3,7 +3,7 @@ import 'package:nbapp/data/remote/model/team_rm.dart';
 
 part 'teams_rm.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(createToJson: false)
 class TeamsRM {
   TeamsRM(
     this.visitors,

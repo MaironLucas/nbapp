@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'team_rm.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(createToJson: false)
 class TeamRM {
   TeamRM(
     this.id,

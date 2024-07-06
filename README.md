@@ -1,29 +1,8 @@
-# NBApp
-This app is designed to consume the [API-NBA](https://rapidapi.com/api-sports/api/api-nba) with the purpose of showing the NBA games and their details like teams, players, standing, etc.
+# Privacy Policy
+We are not interested in collecting any personal information. We believe such information is yours and yours alone. We do not store or transmit your personal details, nor do we include any advertising or analytics software that talks to third parties.
 
-Also, this app is designed to demonstrate my knowledge on developing mobile apps using Flutter.
+## What Information Do We Collect?
+NBApp does not collect any personal information. We just connect to internet and show you live NBA games.
 
-## How to run
-To run, put this additional arg to you flutter run:
-
-```
- --dart-define-from-file=.env
-```
-
-## Architecture and used packages
-Lets take a look on how the app is structured and what features/packages are used.
-
-### App Theme
-The app Theme was created using the [Material Design](https://material.io/design) guidelines and the 
-[Material Design Builder](https://material-foundation.github.io/material-theme-builder/) to generate 
-files accordingly to the selected params (colors and fonts). The generated files are located in the 
-'lib/common/theme' folder.
-
-### Routing
-The app uses [go_router](https://pub.dev/packages/go_router) to handle the routing. 
-The routes are defined in the 'lib/common/routing' folder.
-
-## Dependency Injection
-The app uses [get_it](https://pub.dev/packages/get_it) to handle the dependency injection. All the 
-classes registered in the 'lib/common/di' folder are available to be injected in the app. In general, 
-I choose to inject Data Sources, Repositories, Use Cases and some resources like Dio.
+## Contact
+If you have any questions or concerns, please feel free to send me an email on maironlucaslusarz@gmail.com.

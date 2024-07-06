@@ -1,0 +1,11 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+TeamRM _$TeamRMFromJson(Map<String, dynamic> json) => TeamRM(
+      json['id'] as String,
+      json['name'] as String,
+      json['nickname'] as String,
+      json['code'] as String,
+      json['logo'] as String,
+    );

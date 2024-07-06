@@ -1,0 +1,9 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+DateRM _$DateRMFromJson(Map<String, dynamic> json) => DateRM(
+      json['start'] as String,
+      json['end'] as String,
+      json['duration'] as String,
+    );

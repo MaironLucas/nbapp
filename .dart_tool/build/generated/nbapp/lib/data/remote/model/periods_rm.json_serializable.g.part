@@ -1,0 +1,9 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+PeriodsRM _$PeriodsRMFromJson(Map<String, dynamic> json) => PeriodsRM(
+      (json['current'] as num).toInt(),
+      (json['total'] as num).toInt(),
+      json['endOfPeriod'] as bool,
+    );

@@ -1,0 +1,9 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+TeamScoreRM _$TeamScoreRMFromJson(Map<String, dynamic> json) => TeamScoreRM(
+      (json['win'] as num).toInt(),
+      (json['loss'] as num).toInt(),
+      (json['points'] as num).toInt(),
+    );

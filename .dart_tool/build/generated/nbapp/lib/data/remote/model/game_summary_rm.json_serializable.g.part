@@ -1,0 +1,14 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+GameSummaryRM _$GameSummaryRMFromJson(Map<String, dynamic> json) =>
+    GameSummaryRM(
+      json['id'] as String,
+      DateRM.fromJson(json['date'] as Map<String, dynamic>),
+      GameStatusRM.fromJson(json['status'] as Map<String, dynamic>),
+      PeriodsRM.fromJson(json['periods'] as Map<String, dynamic>),
+      ArenaRM.fromJson(json['arena'] as Map<String, dynamic>),
+      TeamsRM.fromJson(json['teams'] as Map<String, dynamic>),
+      ScoresRM.fromJson(json['scores'] as Map<String, dynamic>),
+    );

@@ -1,0 +1,8 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+TeamsRM _$TeamsRMFromJson(Map<String, dynamic> json) => TeamsRM(
+      TeamRM.fromJson(json['visitors'] as Map<String, dynamic>),
+      TeamRM.fromJson(json['home'] as Map<String, dynamic>),
+    );

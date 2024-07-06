@@ -1,1 +1,0 @@
-final baseUrl = 'https://${const String.fromEnvironment('API_HOST')}';

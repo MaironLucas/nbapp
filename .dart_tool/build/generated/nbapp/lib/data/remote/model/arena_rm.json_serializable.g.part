@@ -1,0 +1,10 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+ArenaRM _$ArenaRMFromJson(Map<String, dynamic> json) => ArenaRM(
+      json['city'] as String,
+      json['name'] as String,
+      json['state'] as String,
+      json['country'] as String,
+    );

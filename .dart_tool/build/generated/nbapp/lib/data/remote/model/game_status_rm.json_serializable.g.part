@@ -1,0 +1,9 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+GameStatusRM _$GameStatusRMFromJson(Map<String, dynamic> json) => GameStatusRM(
+      json['clock'] as String?,
+      json['halftime'] as bool,
+      json['long'] as String,
+    );

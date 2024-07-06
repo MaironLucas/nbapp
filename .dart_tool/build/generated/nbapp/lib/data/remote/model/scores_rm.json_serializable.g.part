@@ -1,0 +1,8 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+ScoresRM _$ScoresRMFromJson(Map<String, dynamic> json) => ScoresRM(
+      TeamScoreRM.fromJson(json['visitors'] as Map<String, dynamic>),
+      TeamScoreRM.fromJson(json['home'] as Map<String, dynamic>),
+    );

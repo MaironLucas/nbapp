@@ -1,0 +1,1 @@
+ /home/mairon/Documentos/flutter/nbapp/.dart_tool/flutter_build/8c3f01b8d72961dd7b189f8f0f6ab20a/native_assets.yaml: 

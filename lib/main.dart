@@ -45,6 +45,7 @@ class _MyApp extends StatelessWidget {
     MaterialTheme theme = MaterialTheme(textTheme);
     return MaterialApp.router(
       title: 'NBApp',
+      debugShowCheckedModeBanner: false,
       theme: theme.dark(),
       routerConfig: appRoutes,
     );

@@ -11,7 +11,7 @@ class GameRDS {
   final Dio _dio;
   
   Future<List<GameSummaryRM>> getLiveGames() async {
-    final response = await _dio.get('${baseUrl}/games?live=all');
+    final response = await _dio.get('${baseUrl}/games?date=2024-04-21');
     if (response.statusCode == 200 || response.data == null) {
       final games = <GameSummaryRM>[];
       final data = response.data as Map<String, dynamic>;

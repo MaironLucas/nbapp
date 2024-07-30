@@ -1,0 +1,8 @@
+{
+  "@@locale": "en_US",
+  "appName": "NBApp",
+  "homeOnboardingMessage": "Welcome to NBApp!\nThis is the right place to follow\nthe NBA season by live games",
+  "liveGames": "Live Games",
+  "tryAgain": "Try Again",
+  "emptyLiveGames": "There is no game being played right now.\nCome back when the season starts!"
+}

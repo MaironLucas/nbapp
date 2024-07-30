@@ -14,7 +14,7 @@ class ArenaRM {
   final String city;
   final String name;
   final String state;
-  final String country;
+  final String? country;
 
   factory ArenaRM.fromJson(Map<String, dynamic> json) =>
       _$ArenaRMFromJson(json);

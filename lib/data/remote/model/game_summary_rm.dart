@@ -20,7 +20,7 @@ class GameSummaryRM {
     this.scores,
   );
 
-  final String id;
+  final int id;
   final DateRM date;
   final GameStatusRM status;
   final PeriodsRM periods;

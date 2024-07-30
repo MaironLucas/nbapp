@@ -12,7 +12,7 @@ class TeamRM {
     this.logo,
   );
 
-  final String id;
+  final int id;
   final String name;
   final String nickname;
   final String code;

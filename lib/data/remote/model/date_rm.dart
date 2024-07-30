@@ -11,8 +11,8 @@ class DateRM {
   );
 
   final String start;
-  final String end;
-  final String duration;
+  final String? end;
+  final String? duration;
 
   factory DateRM.fromJson(Map<String, dynamic> json) => _$DateRMFromJson(json);
 }

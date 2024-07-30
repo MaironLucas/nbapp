@@ -12,7 +12,7 @@ extension GameSummaryRMtoDM on GameSummaryRM {
         date: DateTime.parse(date.start),
         period: periods.current,
         gameStatus: status.toDM(),
-        id: id,
+        id: id.toString(),
         arenaName: arena.name,
         homeTeam: teams.home.toDM(),
         visitorTeam: teams.visitors.toDM(),

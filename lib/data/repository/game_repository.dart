@@ -11,7 +11,20 @@ class GameRepository extends GameDataRepository {
   final GameRDS _gameRDS;
 
   @override
-  Future<List<GameSummary>> getLiveGames() => _gameRDS.getLiveGames().then(
+  Future<List<GameSummary>> getLiveGames() => _gameRDS.getGames().then(
+        (games) => games
+            .map(
+              (game) => game.toDM(),
+            )
+            .toList(),
+      );
+
+  @override
+  Future<List<GameSummary>> getTodayGames() => _gameRDS
+      .getGames(
+        date: DateTime.now(),
+      )
+      .then(
         (games) => games
             .map(
               (game) => game.toDM(),

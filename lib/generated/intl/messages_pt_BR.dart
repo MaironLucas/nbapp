@@ -1,5 +1,5 @@
 // DO NOT EDIT. This is code generated via package:intl/generate_localized.dart
-// This is a library that provides messages for a en_US locale. All the
+// This is a library that provides messages for a pt_BR locale. All the
 // messages from the main program should be duplicated here with the same
 // function name.
 
@@ -18,19 +18,20 @@ final messages = new MessageLookup();
 typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 
 class MessageLookup extends MessageLookupByLibrary {
-  String get localeName => 'en_US';
+  String get localeName => 'pt_BR';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "appName": MessageLookupByLibrary.simpleMessage("NBApp"),
         "emptyLiveGames": MessageLookupByLibrary.simpleMessage(
-            "There is no game being played right now.\nCome back later!"),
+            "Não há nenhum jogo no momento.\nVolte mais tarde!"),
         "emptyTodayGames": MessageLookupByLibrary.simpleMessage(
-            "There is no game today.\nCome back tomorrow or check the "),
-        "emptyTodayGamesLink": MessageLookupByLibrary.simpleMessage("schedule"),
+            "Não há nenhum jogo hoje.\nVolte amanhã ou confira o "),
+        "emptyTodayGamesLink":
+            MessageLookupByLibrary.simpleMessage("calendário"),
         "homeOnboardingMessage": MessageLookupByLibrary.simpleMessage(
-            "Welcome to NBApp!\nThis is the right place to follow\nthe NBA season by live games"),
-        "liveGames": MessageLookupByLibrary.simpleMessage("Live Games"),
-        "tryAgain": MessageLookupByLibrary.simpleMessage("Try Again")
+            "Bem-vindo ao NBApp!\nVocê está no lugar certo para\nacompanhar os jogos da NBA"),
+        "liveGames": MessageLookupByLibrary.simpleMessage("Jogos agora"),
+        "tryAgain": MessageLookupByLibrary.simpleMessage("Tentar novamente")
       };
 }

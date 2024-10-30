@@ -6,12 +6,14 @@ import 'package:nbapp/data/remote/model/game_summary_rm.dart';
 class GameRDS {
   GameRDS({
     required Dio dio,
-}) : _dio = dio;
+  }) : _dio = dio;
 
   final Dio _dio;
-  
-  Future<List<GameSummaryRM>> getLiveGames() async {
-    final response = await _dio.get('${baseUrl}/games?date=2024-04-21');
+
+  Future<List<GameSummaryRM>> getGames({DateTime? date}) async {
+    final response = await _dio.get(
+      date == null ? '${baseUrl}/games?live=all' : '${baseUrl}/games?date=${date.year}-${date.month}-${date.day}',
+    );
     if (response.statusCode == 200 || response.data == null) {
       final games = <GameSummaryRM>[];
       final data = response.data as Map<String, dynamic>;

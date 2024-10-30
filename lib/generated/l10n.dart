@@ -90,11 +90,31 @@ class S {
     );
   }
 
-  /// `There is no game being played right now.\nCome back when the season starts!`
+  /// `There is no game being played right now.\nCome back later!`
   String get emptyLiveGames {
     return Intl.message(
-      'There is no game being played right now.\nCome back when the season starts!',
+      'There is no game being played right now.\nCome back later!',
       name: 'emptyLiveGames',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `There is no game today.\nCome back tomorrow or check the `
+  String get emptyTodayGames {
+    return Intl.message(
+      'There is no game today.\nCome back tomorrow or check the ',
+      name: 'emptyTodayGames',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `schedule`
+  String get emptyTodayGamesLink {
+    return Intl.message(
+      'schedule',
+      name: 'emptyTodayGamesLink',
       desc: '',
       args: [],
     );
@@ -107,6 +127,7 @@ class AppLocalizationDelegate extends LocalizationsDelegate<S> {
   List<Locale> get supportedLocales {
     return const <Locale>[
       Locale.fromSubtags(languageCode: 'en', countryCode: 'US'),
+      Locale.fromSubtags(languageCode: 'pt', countryCode: 'BR'),
     ];
   }
 

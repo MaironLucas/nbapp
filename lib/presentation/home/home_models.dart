@@ -6,10 +6,10 @@ class HomeLoading extends HomeState {}
 
 class HomeSuccess extends HomeState {
   HomeSuccess({
-    required this.liveGames,
+    required this.todayGames,
   });
 
-  final List<GameSummary> liveGames;
+  final List<GameSummary> todayGames;
 }
 
 class HomeError extends HomeState {}

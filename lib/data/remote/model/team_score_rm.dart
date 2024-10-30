@@ -12,7 +12,7 @@ class TeamScoreRM {
 
   final int win;
   final int loss;
-  final int points;
+  final int? points;
 
   factory TeamScoreRM.fromJson(Map<String, dynamic> json) =>
       _$TeamScoreRMFromJson(json);

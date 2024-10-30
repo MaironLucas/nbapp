@@ -2,6 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:domain/error_logger.dart';
 import 'package:domain/repository/game_repository.dart';
 import 'package:domain/use_case/get_live_games_uc.dart';
+import 'package:domain/use_case/get_today_games_uc.dart';
 import 'package:get_it/get_it.dart';
 import 'package:nbapp/data/remote/data_sources/game_rds.dart';
 import 'package:nbapp/data/remote/infraestructure/my_dio.dart';
@@ -26,12 +27,19 @@ void initRepositories() {
 }
 
 void initUseCases() {
-  getIt.registerSingleton<GetLiveGamesUC>(
-    GetLiveGamesUC(
-      errorLogger: getIt<ErrorLogger>(),
-      repository: getIt<GameDataRepository>(),
-    ),
-  );
+  getIt
+    ..registerSingleton(
+      GetLiveGamesUC(
+        errorLogger: getIt<ErrorLogger>(),
+        repository: getIt<GameDataRepository>(),
+      ),
+    )
+    ..registerSingleton(
+      GetTodayGamesUC(
+        errorLogger: getIt<ErrorLogger>(),
+        repository: getIt<GameDataRepository>(),
+      ),
+    );
 }
 
 void initDataSources() {

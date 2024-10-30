@@ -1,0 +1,11 @@
+{
+  "@@locale": "pt_BR",
+  "appName": "NBApp",
+  "homeOnboardingMessage": "Bem-vindo ao NBApp!\nVocê está no lugar certo para\nacompanhar os jogos da NBA",
+  "liveGames": "Jogos agora",
+  "todayGames": "Jogos de hoje",
+  "tryAgain": "Tentar novamente",
+  "emptyLiveGames": "Não há nenhum jogo no momento.\nVolte mais tarde!",
+  "emptyTodayGames": "Não há nenhum jogo hoje.\nVolte amanhã ou confira o ",
+  "emptyTodayGamesLink": "calendário"
+}
